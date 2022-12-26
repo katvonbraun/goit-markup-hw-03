@@ -13,6 +13,18 @@ light slate helper text       #8E8F99
   --text-color: #434455;
   --section-title-color: #2e2f42;
 }
+
+p,h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 /* --------------GLOBAL STYLES------------- */
 body {
   font-family: "Roboto", sans-serif;
@@ -25,6 +37,14 @@ body {
 
 .list {
   list-style: none;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
 }
 
 /* --------------HEADER------------- */
