@@ -14,7 +14,13 @@ light slate helper text       #8E8F99
   --section-title-color: #2e2f42;
 }
 
-p,h1,h2,h3,h4,h5,h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -61,11 +67,41 @@ body {
   color: #2e2f42;
 }
 
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .logo-accent {
   color: var(--accent-colr);
 }
 
+.header-list {
+  display: flex;
+  /* margin-right: auto; */
+}
+
+.header-navigation {
+  display: flex;
+}
+
+.header-navigation .logo {
+  margin-right: 76px;
+}
+
+.nav-flex {
+  display: flex;
+  align-items: center;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .header-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
@@ -79,6 +115,15 @@ body {
 
 .header-link:active {
   color: var(--accent-colr);
+}
+
+.header-contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .contacts-link {
@@ -105,19 +150,33 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+
+  margin-bottom: 48px;
 }
 
 .hero-btn {
   background-color: var(--accent-colr);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
   font-family: inherit;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.19;
+
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  padding: 16px 32px;
+  margin: 0 auto;
+}
+
+/* --------------SECTIONS PADDINGS------------- */
+.section:not(:last-child) {
+  margin-bottom: 120px;
 }
 
 /* --------------BENEFITS------------- */
@@ -127,6 +186,15 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--benefits-title-color);
+  margin-bottom: 8px;
+}
+
+.benefits-list {
+  display: flex;
+}
+
+.benefits-item:not(:last-child) {
+  margin-right: 24px;
 }
 
 .benefits-text {
@@ -147,10 +215,25 @@ body {
   color: var(--section-title-color);
 }
 
+.job-title {
+  margin-bottom: 72px;
+}
+
+.job-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* --------------TEAM------------- */
 .team {
   background-color: #f4f4fd;
 }
+
+.team-title {
+  padding-top: 120px;
+  margin-bottom: 72px;
+}
+
 .team-item-title {
   font-weight: 600;
   font-size: 20px;
