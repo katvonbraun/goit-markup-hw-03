@@ -146,6 +146,10 @@ body {
   background-color: #2e2f42;
 }
 
+.hero-container {
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
 .hero-title {
   font-weight: 600;
   font-size: 56px;
@@ -178,11 +182,17 @@ body {
 }
 
 /* --------------SECTIONS PADDINGS------------- */
-.section:not(:last-child) {
-  margin-bottom: 120px;
-}
+/* .section {
+padding-top: 120px;
+padding-bottom: 120px;
+} */
 
 /* --------------BENEFITS------------- */
+.benefits {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .benefits-heading {
   font-weight: 600;
   font-size: 20px;
@@ -218,6 +228,9 @@ body {
   color: var(--section-title-color);
 }
 
+.job > .container {
+  padding-bottom: 120px;
+}
 .job-title {
   margin-bottom: 72px;
 }
@@ -230,17 +243,16 @@ body {
 /* --------------TEAM------------- */
 .team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-title {
-  padding-top: 120px;
   margin-bottom: 72px;
 }
 
 .team-list {
   display: flex;
-  /* justify-content: center; */
-  padding-bottom: 120px;
 }
 
 .team-item {
@@ -248,8 +260,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 0px 32px;
-  gap: 32px;
 
   background: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -261,6 +271,11 @@ body {
   margin-right: 24px;
 }
 
+.team-members {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .team-item-title {
   font-weight: 600;
   font-size: 20px;
@@ -268,6 +283,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--benefits-title-color);
+  margin-bottom: 8px;
 }
 
 .team-text {
@@ -281,11 +297,12 @@ body {
 /* --------------FOOTER------------- */
 .footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo {
   color: #f4f4fd;
-  padding-top: 100px;
   margin-bottom: 16px;
 }
 
@@ -295,15 +312,14 @@ body {
   letter-spacing: 0.02em;
   color: #e7e9fc;
   width: 264px;
-  padding-bottom: 100px;
 }
 
 /* --------------PORTFOLIO------------- */
 
 /* --------------FILTER BUTTONS------------- */
 .portfolio {
-  margin-top: 96px;
-  margin-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 .portfolio-btn {
   display: flex;
@@ -357,8 +373,6 @@ body {
   width: calc((100% - 24px * 2) / 3);
   margin-right: 24px;
   margin-bottom: 48px;
-
-  border: 1px solid #e7e9fc;
 }
 
 .portfolio-item:nth-child(3n) {
@@ -375,8 +389,6 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--benefits-title-color);
-  padding-left: 16px;
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 
@@ -385,6 +397,13 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
-  padding-left: 16px;
+}
+
+.portfolio-names {
+  padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 16px;
+
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
