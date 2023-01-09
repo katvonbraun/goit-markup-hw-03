@@ -80,7 +80,7 @@ body {
 
 .header-list {
   display: flex;
-  /* margin-right: auto; */
+  gap: 40px;
 }
 
 .header-navigation {
@@ -96,9 +96,6 @@ body {
   align-items: center;
 }
 
-.header-item:not(:last-child) {
-  margin-right: 40px;
-}
 
 .header-link {
   display: block;
@@ -122,12 +119,10 @@ body {
 
 .header-contacts-list {
   display: flex;
+  gap: 40px;
   margin-left: auto;
 }
 
-.contacts-item:not(:last-child) {
-  margin-right: 40px;
-}
 
 .contacts-link {
   font-size: 16px;
@@ -204,10 +199,7 @@ padding-bottom: 120px;
 
 .benefits-list {
   display: flex;
-}
-
-.benefits-item:not(:last-child) {
-  margin-right: 24px;
+  gap: 24px;
 }
 
 .benefits-text {
@@ -216,6 +208,7 @@ padding-bottom: 120px;
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
+
 /* --------------JOB------------- */
 .job-title,
 .team-title {
@@ -323,12 +316,9 @@ padding-bottom: 120px;
 }
 .portfolio-btn {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 0px;
   gap: 24px;
   justify-content: center;
-
   margin-bottom: 72px;
 }
 
@@ -367,12 +357,14 @@ padding-bottom: 120px;
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+column-gap: 24px;
+row-gap: 48px;
 }
 
 .portfolio-list > .portfolio-item {
   width: calc((100% - 24px * 2) / 3);
-  margin-right: 24px;
-  margin-bottom: 48px;
+  /* margin-right: 24px; */
+  /* margin-bottom: 48px; */
 }
 
 .portfolio-item:nth-child(3n) {
